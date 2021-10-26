@@ -6,8 +6,8 @@ application up and running.
 ruby version '2.6.5'
 rails version '~> 6.0.4'
 
-Create mysql databse before run migrations 
-Change configurations in config -> database.yml file
+Create mysql databse before run migrations and
+Change databse and env configurations in config -> database.yml file
 
 ## Commands
 
