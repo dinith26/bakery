@@ -3,22 +3,24 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+ruby version '2.6.5'
+rails version '~> 6.0.4'
 
-* Ruby version
+## Commands
 
-* System dependencies
+# Install all dependencies and compile assets file usinf following commands
+```
+bundle install
+rails assets:clobber
+rails webpacker:compile
+```
 
-* Configuration
+# run migrations
+rails db:migrate
 
-* Database creation
+# run seed files
+rails products:seed_genres
+rails packages:seed_packs
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# run the development server and services
+rails server
