@@ -1,3 +1,27 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+/* jxmot customizing */
+h2,h3,h4{
+  color: #fff;
+}
+#slide-test-1 {
+    background: #193564;
+    height:50px;
+    padding-top:50px;
+    padding-left:28px;
+}
+
+#slide-test-3 {
+    background: black;
+    height:50px;
+    padding-top:50px;
+    padding-left:50px;
+}
+.home-text{
+  margin-left: 30px;
+  font-weight: 500;
+}
+.bottom{
+  color: #fff;
+  margin-left: 30px!important;
+  margin-top: -60px!important;
+  padding-bottom: 18px!important;
+}
