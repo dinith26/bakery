@@ -3,22 +3,33 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+ruby version '2.6.5'
+rails version '~> 6.0.4'
 
-* Ruby version
+Create mysql databse before run migrations and
+Change databse and env configurations in config -> database.yml file
 
-* System dependencies
+## Commands
 
-* Configuration
+# Install all dependencies and compile assets file usinf following commands
+```
+bundle install
+rails assets:clobber
+rails webpacker:compile
+```
 
-* Database creation
+# run migrations
+```
+rails db:migrate
+```
 
-* Database initialization
+# run seed files
+```
+rails products:seed_genres
+rails packages:seed_packs
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# run the development server and services
+```
+rails server
+```
